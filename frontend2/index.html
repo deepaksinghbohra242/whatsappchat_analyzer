@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Analyzer Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Chat Analyzer Test</h1>
+    
+    <div class="container">
+        <h2>Option 1: Upload File</h2>
+        <input type="file" id="fileInput" accept=".txt">
+        <br>
+        <button onclick="uploadFile()">Analyze File</button>
+    </div>
+    
+    <div class="container">
+        <h2>Option 2: Paste Text</h2>
+        <textarea id="textInput" placeholder="Paste your chat content here...
+Example:
+12/25/2023, 10:30 AM - John: Hello everyone!
+12/25/2023, 10:32 AM - Alice: Hi John! How are you?
+12/25/2023, 10:35 AM - Bob: &lt;Media omitted&gt;
+12/25/2023, 10:40 AM - John: Great! Looking forward to the meeting 😊"></textarea>
+        <br>
+        <button onclick="analyzeText()">Analyze Text</button>
+    </div>
+    
+    <div id="result" class="result" style="display: none;"></div>
+
+</body>
+</html>
